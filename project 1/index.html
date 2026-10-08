@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Demo Community</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="go('home')"><span>Demo</span><em>Community</em></div>
+        <div>
+            <button class="ib" onclick="toggleTheme()" aria-label="Toggle Theme">🌓</button>
+            <button class="ib" onclick="go('note')" aria-label="Notifications">🔔<i class="dot" id="dot"></i></button>
+        </div>
+    </header>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="welcome">
+        <div class="in">
+            <div class="logo"><span>Demo</span><em>Community</em></div>
+            <p class="t">Your space. Your People.<br> Your Moments.</p>
+            <div class="f"><i>🔒</i><b>Private community</b><span>Members-only community with admin-managed accounts.</span></div>
+            <button class="pb" onclick="enter()">Enter Demo</button>
+        </div>
+    </div>
+
+    <div id="app" class="hidden">
+        <div class="bar">Demo mode - Everything here is sample data and resets on refresh</div>
+
+        <div class="wrap">
+            <nav class="rail" id="rail"></nav>
+            <main id="main"></main>
+        </div>
+        <div class="tab" id="tab"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
